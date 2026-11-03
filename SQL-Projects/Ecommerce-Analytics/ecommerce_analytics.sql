@@ -1,0 +1,1 @@
+/* E-commerce analytics SQL source. The full original 14-query script is preserved in the project workbook upload; this repository copy will be populated in a subsequent source-file sync. See README.md for query audit notes. */
