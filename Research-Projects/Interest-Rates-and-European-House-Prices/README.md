@@ -31,10 +31,7 @@ The executive summary reports an insignificant baseline pooled-OLS interest-rate
 5. **Coefficient interpretation:** the report alternates between level, log and elasticity language. State the exact dependent-variable transformation and interpret coefficients in units consistent with the estimated model.
 6. **Rate measurement:** distinguish policy rates, mortgage rates and real rates. The ECB policy rate may not represent borrowing costs in non-euro-area countries or each country's household mortgage market.
 7. **Causal wording:** fixed effects and lagged instruments do not by themselves establish causality. Present estimates as conditional associations unless identification assumptions are defended.
-8. **Reproducibility:** the report PDF was supplied, but the underlying panel dataset and analysis scripts were not included in this upload. Add the anonymised/redistributable data, source links, code and a variable dictionary before claiming reproducibility.
+8. **Reproducibility:** the submitted research PDF was supplied for portfolio preparation, but has not yet been committed to this repository. The underlying panel dataset and statistical scripts are also not present here. Add redistributable data, source links, code and a variable dictionary before claiming reproducibility.
 
 ## Portfolio positioning
 This project demonstrates macro-financial research, panel-data reasoning and interpretation of heterogeneous housing-market responses. The final portfolio version should pair the report with reproducible code and a transparent limitations section.
-
-## Source file status
-The research PDF was supplied for review but is not included in this repository yet. No underlying data or statistical code has been published here.
