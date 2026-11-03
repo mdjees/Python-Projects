@@ -9,23 +9,29 @@ A four-page Power BI report analysing a D2C skincare business across commercial 
 3. **Product Performance** — revenue and gross-margin relationship by product, revenue by category and skin type.
 4. **Returns Quality** — return rate by category, return reasons, and product-level relationship between average rating and return rate.
 
-## What the screenshots demonstrate
+## Supplied visual evidence
+Four screenshots of the report were supplied:
+- Executive Overview
+- Customer Analytics
+- Product Performance
+- Returns Quality
+
+The Power BI project file `d2c_final.pbix` was also supplied for portfolio preparation. Neither the PBIX nor the screenshots have yet been committed to this repository.
+
+## Screenshot-based review observations
 - The report has a clear page-level analytical narrative rather than a single crowded canvas.
 - Executive metrics and channel mix are easy to scan.
 - Customer acquisition and geographic segmentation provide useful commercial context.
 - Product and returns pages move beyond revenue into margin and quality indicators.
+- The Executive Overview revenue chart's YearMonth labels appear in a non-chronological order. Use a true date/month-start column and sort the display label by that date.
+- The headline Return Rate card displays `0.04`; format as 4% if the measure is stored as a decimal ratio, and show the numerator/denominator definition in a tooltip.
+- Return-rate-by-category values above 100% require validation of the DAX denominator and filter context.
+- Document whether Average CLV is historical revenue per customer, cumulative revenue, or predictive lifetime value.
+- Verify gross margin uses (revenue minus cost) divided by revenue.
+- Confirm state fields are categorised as Indian states and that the map uses appropriate geographic fields.
 
-## Review observations and improvements
-- **Chronological trend:** the Executive Overview revenue chart's YearMonth labels appear in a non-chronological order in the supplied screenshot. Use a true date/month-start column and sort the display label by that date.
-- **Return-rate formatting:** the headline card displays `0.04`; format as a percentage (4%) if the measure is stored as a decimal ratio, and show the denominator/definition in a tooltip.
-- **Return rate by category:** values above 100% appear in the supplied Returns Quality chart. Validate the DAX denominator and filter context; a conventional rate should have a clearly defined returned-unit/order numerator and eligible-unit/order denominator.
-- **CLV definition:** document whether average CLV is historical revenue per customer, cumulative revenue, or a predictive lifetime value. The screenshot alone does not establish the calculation.
-- **Gross margin:** verify the DAX measure uses (revenue minus cost) divided by revenue, not cost divided by revenue.
-- **Geography:** confirm state names are categorised as Indian states and that the map uses appropriate geographic fields.
-- **Accessibility:** add descriptive alt text, consistent number formats, and meaningful chart titles; avoid relying on colour alone.
-
-## Files and reproducibility
-The four screenshots were supplied for portfolio review. The PBIX file, source tables and DAX measures were not included in this upload, so the calculations and interactions have not been independently audited. Add the PBIX and a data dictionary when available.
+## Reproducibility and limitations
+The screenshots establish report layout, not the correctness of the underlying calculations. The PBIX, source tables and DAX measures need to be reviewed together before the metrics can be treated as independently validated.
 
 ## Portfolio positioning
-This project demonstrates business-facing Power BI storytelling across revenue, customer acquisition, product economics and returns. The screenshots are evidence of report layout; the underlying measures should be validated before presenting the metrics as audited results.
+This project demonstrates business-facing Power BI storytelling across revenue, customer acquisition, product economics and returns. The next repository release should include the PBIX (if data rights permit), compressed preview images and a data dictionary.
