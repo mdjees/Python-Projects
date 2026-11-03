@@ -1,0 +1,3 @@
+-- Netflix catalogue SQL analysis (PostgreSQL)
+-- Source dataset: netflix_titles.csv (8,807 rows; 12 columns)
+-- See README.md for execution notes and caveats.
